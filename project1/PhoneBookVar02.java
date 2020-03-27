@@ -1,7 +1,8 @@
 package project1;
 
 import java.util.Scanner;
-import ver02.PhoneInfo;
+
+import project1.ver02.PhoneInfo;
 
 public class PhoneBookVar02 {
 	    	//프로그램에서의 입력메뉴 출력

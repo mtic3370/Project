@@ -4,7 +4,7 @@ import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 import java.util.Scanner;
 
-import ver03.PhoneInfo;
+import project1.ver03.PhoneInfo;
 
 
 class PhoneInfoHandler {
