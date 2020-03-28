@@ -1,7 +1,5 @@
 package project1;
 
-import java.io.FileOutputStream;
-import java.io.ObjectOutputStream;
 import java.util.Scanner;
 
 import project1.ver03.PhoneBookManager;
@@ -21,29 +19,29 @@ System.out.print("메뉴선택>>>");
 	
 public static void main(String[] args) {
 
-	PhoneBookManager handler =
+	PhoneBookManager pbmanager=
 			new PhoneBookManager(100);
-		int choice;
-	Scanner scan = new Scanner(System.in);
 	while(true) {
 		printMenu();
 		
-		choice = scan.nextInt();
+		Scanner scan = new Scanner(System.in);
+		int choice=scan.nextInt();
+		
 	switch(choice) {
 	
 	case 1:
-		handler.dataInput();
+		pbmanager.dataInput();
 		break;
 	case 2:
 		//Date검색
-		handler.dataSearch();
+		pbmanager.dataSearch();
 		break;
 	case 3:
 		//Date삭제
-		handler.dataDelete();
+		pbmanager.dataDelete();
 	case 4:
 		//Date출력
-		handler.dataAllShow();
+		pbmanager.dataAllShow();
 		break;
 	case 5:
 		System.out.println("프로그램을 종료합니다.");
