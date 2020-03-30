@@ -1,13 +1,12 @@
-package project1.ver4;
+package project1.ver04;
 
 class PhoneSchoolInfo extends PhoneInfo{
 
 	String major;
 	int grade;
 
-	public PhoneSchoolInfo(String name, String phoneNumber,
-								String major,int grade) {
-		super(name, phoneNumber);
+	public PhoneSchoolInfo(String name, String phone, String major,int grade) {
+		super(name, phone);
 		this.major=major;
 		this.grade=grade;
 	}
