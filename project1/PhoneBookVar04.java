@@ -2,8 +2,8 @@ package project1;
 
 import java.util.Scanner;
 
-import project1.ver03.PhoneBookManager;
-import project1.ver03.PhoneInfo;
+import project1.ver04.PhoneBookManager;
+import project1.ver04.PhoneInfo;
 
 public class PhoneBookVar04 {
     	//프로그램에서의 입력메뉴 출력
@@ -39,6 +39,7 @@ public static void main(String[] args) {
 	case 3:
 		//Date삭제
 		pbmanager.dataDelete();
+		break;
 	case 4:
 		//Date출력
 		pbmanager.dataAllShow();
