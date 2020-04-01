@@ -1,6 +1,9 @@
 package project1.ver05;
 
 import java.util.Scanner;
+
+
+
 import javax.sound.midi.MidiDevice.Info;
 
 public class PhoneBookManager implements SubMenuItem{
@@ -52,9 +55,8 @@ public class PhoneBookManager implements SubMenuItem{
 	public void dataAllShow() {
 		for(int i=0 ; i<numOfInfo ; i++) {
 			PhoneInfo[i].showPhoneInfo();
+		System.out.println("==출력된 정보입니다==");
 		}
-
-		System.out.println("==전체정보가 출력되었습니다==");
 
 	}////end of dataAllShow
 
@@ -99,24 +101,15 @@ public class PhoneBookManager implements SubMenuItem{
 				deleteIndex = i;
 				//전체카운트 변수 -1 차감
 				numOfInfo--;
+				System.out.println("데이터가 삭제 되었습니다.");
+				break;
+
 			}
 		}
 
 		if(deleteIndex==-1) {
 			//검색된 데이터가 없는경우...
 			System.out.println("==삭제된 데이터가 없습니다==");
-
-		}
-		else {
-			/*
-			객체배열에서 검색된 요소를 삭제한후 입력된 위치의 바로뒤 요소를
-			앞으로 하나씩 교환한다. 
-			 */
-			for(int i=deleteIndex ; i<numOfInfo ; i++) {
-				PhoneInfo[i] = PhoneInfo[i+1];
-			}
-			System.out.println("==데이터("+ deleteIndex
-					+"번)가 삭제되었습니다==");
 
 		}
 	}////end of deleteInfo
